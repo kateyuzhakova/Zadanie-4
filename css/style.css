@@ -1,0 +1,113 @@
+@font-face {
+    font-family: f1;
+    src: url(../font/Novelist_free.otf);
+} 
+body{
+    background: black;
+    min-height: 100vh;
+}
+.container{
+     display: flex;
+     flex-direction: column;
+     flex: 1 0 auto;
+}
+header{
+    display: flex;
+    justify-content: space-around;
+}
+.logo{
+    background: url(../img/gepard.jpg);
+    background-size: cover;
+    border-radius: 10px;
+    height: auto;
+    width: 20%;
+    aspect-ratio: 2/1;
+    box-shadow: 0 0 10px 5px rgb(240, 239, 237), 1px 1px 15px rgb(75, 65, 7);
+
+}
+.nav{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    font-size: calc(0.5rem + 1vw);
+    color: antiquewhite;
+    flex-grow: 1;
+}
+.nav-item{
+    box-sizing: border-box;
+    padding: 10px;
+    cursor: pointer;
+    margin-left: 50px;
+}
+.nav-item:hover{
+    text-shadow: 3px 5px 10px #ff3300, 1px 1px 1px #7fff00;
+}
+
+.bg-line{
+    background: url(../img/gepard-ris.jpg) no-repeat transparent;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3/1;
+    margin: 25px 0;
+    color: aliceblue;
+}
+.head{
+    font-family: f1;
+    font-size: calc(1.5rem + 5vw);
+    letter-spacing: 2rem;
+    text-align: center;
+    text-shadow: 2px 2px 1px #634820;
+}
+.line{
+    display: flex;
+    margin: 25px auto;
+    width: 80vw;
+}
+.img1{
+    object-fit: scale-down;
+    flex: 1 1 50%;
+}
+.text1{
+    color: white;
+    font-size: calc(0.5em + 1vw);
+    margin: 0px 10px 10px 20px;
+    flex:1 1 50%;
+}
+.img2{
+    object-fit: scale-down;
+    flex: 1 1 50%;
+}
+.img2 img, .img1 img{
+    width: 100%;
+    height: auto;
+}
+.text2{
+    color: white;
+    font-size: calc(0.5em + 1vw);
+    margin: 0px 10px 10px 20px;
+    flex:1 1 50%;
+}
+footer{
+    color: whitesmoke;
+    display: flex;
+   width: 100%;
+    background-color: #333333;
+
+}
+.footer-nav{
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 1;
+    flex-wrap: wrap;
+}
+.footer-nav-item{
+    font-size: calc(0.2rem + 1vw);
+
+}
+.icons{
+    display: flex;
+    width: 30vw;
+    justify-content: space-around;
+    align-items: center;
+}
